@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
@@ -13,7 +14,10 @@
     <children>
         <VBox alignment="CENTER" layoutX="34.0" layoutY="27.0" prefHeight="345.0" prefWidth="488.0" spacing="15" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
             <children>
-                <ImageView fitHeight="100" fitWidth="100" />
+                <ImageView fx:id="imageView" fitHeight="100" fitWidth="100">
+               <image>
+                  <Image url="@../../Images/kfc_logo.png" />
+               </image></ImageView>
                 <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Login to KFC System" />
                 <TextField fx:id="usernameTF" promptText="Username / Email" />
                 <PasswordField fx:id="passwordTF" promptText="Password" />
