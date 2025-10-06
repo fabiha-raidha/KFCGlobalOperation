@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="oop.kfcglobaloperation.HeadChefDashboard"
-            prefHeight="400.0" prefWidth="600.0">
 
-</AnchorPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox prefHeight="484.0" prefWidth="191.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" text="Overview" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="202.0" text="Recipe/ Menu" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" text="Inventory" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" text="Attendance" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" text="Line Management" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" style="-fx-background-color: creme;" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" text="Log Out" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

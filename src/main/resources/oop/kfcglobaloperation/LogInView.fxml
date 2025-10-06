@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.kfcglobaloperation.LogInController">
     <children>
@@ -18,7 +19,10 @@
                <image>
                   <Image url="@../../Images/kfc_logo.png" />
                </image></ImageView>
-                <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Login to KFC System" />
+                <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Login to KFC System">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font></Label>
                 <TextField fx:id="usernameTF" promptText="Username / Email" />
                 <PasswordField fx:id="passwordTF" promptText="Password" />
                 <HBox alignment="CENTER" spacing="10">
