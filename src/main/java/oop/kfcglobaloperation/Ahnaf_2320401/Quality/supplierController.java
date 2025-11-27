@@ -6,7 +6,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class supplier
+public class supplierController
 {
     @javafx.fxml.FXML
     private TableColumn nameTableColumn;
@@ -17,7 +17,7 @@ public class supplier
     @javafx.fxml.FXML
     private Label totalSuppliersLabel;
     @javafx.fxml.FXML
-    private TableColumn<> contactTableColumn;
+    private TableColumn contactTableColumn;
     @javafx.fxml.FXML
     private TextField categoryTextField;
     @javafx.fxml.FXML
