@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="class_controller.Fabiha_2211214.HeadChef.InventoryController">
+
+    <children>
+        <!-- Screen Title -->
+        <Label layoutX="240.0" layoutY="20.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Ingredient / Inventory Management" />
+
+        <!-- Ingredient Table View (event-5) -->
+        <TableView fx:id="ingredientTableView" layoutX="20.0" layoutY="60.0" prefHeight="250" prefWidth="660.0">
+            <columns>
+                <TableColumn fx:id="nameTableColumn" prefWidth="150.0" text="Ingredient Name" />
+                <TableColumn fx:id="idTableColumn" prefWidth="80.0" text="ID" />
+                <TableColumn fx:id="quantityTableColumn" prefWidth="100.0" text="Current Qty" />
+                <TableColumn fx:id="requiredQuantityTableColumn" prefWidth="100.0" text="Required Qty" />
+                <TableColumn fx:id="stockWarningTableColumn" prefWidth="100.0" text="Stock Warning" />
+                <TableColumn fx:id="usedInRecipesTableColumn" prefWidth="130.0" text="Used In (Recipe IDs)" />
+            </columns>
+        </TableView>
+
+        <!-- Status Label -->
+        <Label fx:id="statusLabel" layoutX="20.0" layoutY="320.0" prefHeight="17.0" prefWidth="250.0" text="Total Ingredients: 0" />
+
+        <!-- Filtering Section (event-6) -->
+        <Label layoutX="20.0" layoutY="350.0" style="-fx-font-weight: bold;" text="Filter Ingredients:" />
+
+        <TextField fx:id="nameFilterTextField" layoutX="20.0" layoutY="370.0" prefWidth="180" promptText="Filter by Ingredient Name" />
+        <TextField fx:id="recipeFilterTextField" layoutX="210.0" layoutY="370.0" prefWidth="180" promptText="Filter by Recipe Name" />
+        <ComboBox fx:id="stockWarningFilterComboBox" layoutX="400.0" layoutY="370.0" prefWidth="150" promptText="Stock Warning" />
+
+        <Button layoutX="570.0" layoutY="370.0" onAction="#handleFilterONA" prefWidth="110" text="Filter" />
+
+        <!-- Action Buttons (event-9 & event-12) -->
+        <Label layoutX="20.0" layoutY="440.0" style="-fx-font-weight: bold;" text="Actions:" />
+
+        <Button layoutX="20.0" layoutY="460.0" onAction="#handleAddIngredientONA" prefWidth="180" text="Add New Ingredient" />
+        <Button layoutX="210.0" layoutY="460.0" onAction="#handleUpdateStockONA" prefWidth="180" text="Update Stock / Recalculate" />
+
+    </children>
+</AnchorPane>
