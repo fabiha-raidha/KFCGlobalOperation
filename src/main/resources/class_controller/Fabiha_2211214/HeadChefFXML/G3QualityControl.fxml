@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<!-- Controller is updated to QualityControlController -->
+<AnchorPane prefHeight="650.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="class_controller.Fabiha_2211214.HeadChef.QualityControlController">
+
+    <children>
+        <!-- Screen Title -->
+        <Label layoutX="210.0" layoutY="20.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Quality Control and Compliance Checks" />
+
+        <!-- High-Level Overview & Alerts (Event-4) -->
+        <Label layoutX="25.0" layoutY="65.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Compliance Overview" />
+        <HBox layoutX="25.0" layoutY="90.0" spacing="20.0">
+            <children>
+                <Label fx:id="expiryAlertLabel" style="-fx-text-fill: red;" text="Expiry Alerts: 3 Items" />
+                <Label fx:id="checklistStatusLabel" text="Checklist Status: Pending" />
+                <Button fx:id="viewChecklistButton" onAction="#handleDailyChecklistONA" text="Start Daily Hygiene Checklist (event-5)" />
+            </children>
+        </HBox>
+
+        <!-- Inspection Schedule / QC Logs Table (Event-4) -->
+        <Label layoutX="25.0" layoutY="140.0" style="-fx-font-weight: bold;" text="Inspection &amp; QC Logs" />
+        <TableView fx:id="inspectionLogTableView" layoutX="25.0" layoutY="160.0" prefHeight="200" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="logTypeColumn" prefWidth="120.0" text="Type" />
+                <TableColumn fx:id="lastCheckColumn" prefWidth="150.0" text="Last Check Date" />
+                <TableColumn fx:id="nextScheduleColumn" prefWidth="150.0" text="Next Scheduled" />
+                <TableColumn fx:id="complianceScoreColumn" prefWidth="100.0" text="Score" />
+                <TableColumn fx:id="actionsColumn" prefWidth="180.0" text="Action" />
+            </columns>
+        </TableView>
+
+        <!-- Temperature Logs Section (Event-14, Event-15) -->
+        <Label layoutX="25.0" layoutY="380.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Temperature Logs" />
+        <TableView fx:id="tempLogTableView" layoutX="25.0" layoutY="405.0" prefHeight="150" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="tempItemColumn" prefWidth="150.0" text="Item/Area" />
+                <TableColumn fx:id="tempReadingColumn" prefWidth="120.0" text="Reading (°C)" />
+                <TableColumn fx:id="timestampColumn" prefWidth="230.0" text="Timestamp" />
+                <TableColumn fx:id="tempStatusColumn" prefWidth="200.0" text="Status" />
+            </columns>
+        </TableView>
+
+        <!-- New Temperature Log Input (Event-16) -->
+        <Label layoutX="25.0" layoutY="575.0" style="-fx-font-weight: bold;" text="Record New Reading:" />
+        <HBox layoutX="25.0" layoutY="600.0" spacing="10.0">
+            <children>
+                <TextField fx:id="tempItemTextField" prefWidth="200" promptText="Item/Area (e.g., Fridge A)" />
+                <TextField fx:id="tempReadingTextField" prefWidth="150" promptText="Temperature (°C)" />
+                <Button onAction="#handleSaveNewTemperatureONA" text="Save Reading (event-16)" />
+            </children>
+        </HBox>
+
+    </children>
+</AnchorPane>
