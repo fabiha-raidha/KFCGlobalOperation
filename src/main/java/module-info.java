@@ -3,10 +3,10 @@ module oop.kfcglobaloperation {
     requires javafx.fxml;
 
 
-    opens oop.kfcglobaloperation to javafx.fxml;
-    exports oop.kfcglobaloperation;
-    exports oop.kfcglobaloperation.Fabiha_2211214;
-    opens oop.kfcglobaloperation.Fabiha_2211214 to javafx.fxml;
-    exports oop.kfcglobaloperation.Fabiha_2211214.CMO;
-    opens oop.kfcglobaloperation.Fabiha_2211214.CMO to javafx.fxml;
+    opens class_controller to javafx.fxml;
+    exports class_controller;
+    exports class_controller.Fabiha_2211214;
+    opens class_controller.Fabiha_2211214 to javafx.fxml;
+    exports class_controller.Fabiha_2211214.CMO;
+    opens class_controller.Fabiha_2211214.CMO to javafx.fxml;
 }
