@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="class_controller.Marzana_2432038.StoreManager.staffScheduleController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="class_controller.Marzana_2432038.StoreManager.StaffSchedulingController">
 
+    <children>
+        <Label layoutX="185.0" layoutY="20.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Staff Scheduling &amp; Attendance" />
+
+        <TableView fx:id="scheduleTableView" layoutX="25.0" layoutY="60.0" prefHeight="180.0" prefWidth="550.0">
+            <columns>
+                <TableColumn fx:id="staffIdTC" prefWidth="70.0" text="Staff ID" />
+                <TableColumn fx:id="nameTableColumn" prefWidth="90.0" text="Name" />
+                <TableColumn fx:id="roleTableColumn" prefWidth="80.0" text="Role" />
+                <TableColumn fx:id="shiftDateTableColumn" prefWidth="90.0" text="Shift Date" />
+                <TableColumn fx:id="startTimeTableColumn" prefWidth="80.0" text="Start Time" />
+                <TableColumn fx:id="endTimeTableColumn" prefWidth="80.0" text="End Time" />
+                <TableColumn fx:id="statusTableColumn" prefWidth="80.0" text="Status" />
+                <TableColumn fx:id="modifyTableColumn" prefWidth="60.0" text="Modify" />
+            </columns>
+        </TableView>
+
+        <Label fx:id="summaryLabel" layoutX="25.0" layoutY="248.0" prefHeight="17.0" prefWidth="250.0" />
+
+        <TextField fx:id="staffIdTextField" layoutX="30.0" layoutY="253.0" prefHeight="25.0" prefWidth="120.0" promptText="Staff ID" />
+
+        <TextField fx:id="nameTextField" layoutX="160.0" layoutY="253.0" prefHeight="25.0" prefWidth="150.0" promptText="Name" />
+
+        <ComboBox fx:id="roleComboBox" layoutX="168.0" layoutY="297.0" prefHeight="25.0" prefWidth="120.0" promptText="Role" />
+
+        <DatePicker fx:id="shiftDatePicker" layoutX="332.0" layoutY="253.0" prefHeight="25.0" prefWidth="105.0" />
+
+        <TextField fx:id="startTimeTextField" layoutX="30.0" layoutY="297.0" prefHeight="25.0" prefWidth="120.0" promptText="Start Time (HH:MM)" />
+
+        <TextField fx:id="endTimeTextField" layoutX="30.0" layoutY="341.0" prefHeight="25.0" prefWidth="120.0" promptText="End Time (HH:MM)" />
+
+        <ComboBox fx:id="statusComboBox" layoutX="175.0" layoutY="341.0" prefHeight="25.0" prefWidth="120.0" promptText="Status" />
+
+        <Button layoutX="470.0" layoutY="310.0" onAction="#handleDoneOnAction" prefWidth="105.0" text="Done" />
+
+        <Label fx:id="messageLabel" layoutX="25.0" layoutY="345.0" prefHeight="17.0" prefWidth="550.0" />
+    </children>
 </AnchorPane>
