@@ -1,11 +1,15 @@
 package class_controller.Ahnaf_2320401.Quality;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.*;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
-
-public class storeAuditsController {
-
+public class storeAuditsController
+{
     @javafx.fxml.FXML
     private TableView<storeAuditsClass> auditsTableView;
     @javafx.fxml.FXML
@@ -35,7 +39,7 @@ public class storeAuditsController {
 
     @javafx.fxml.FXML
     public void initialize() {
-        }
+    }
 
     @javafx.fxml.FXML
     public void openStoreAuditsONA(ActionEvent actionEvent) {
@@ -53,4 +57,3 @@ public class storeAuditsController {
     public void submitAuditONA(ActionEvent actionEvent) {
     }
 }
-
