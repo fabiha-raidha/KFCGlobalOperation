@@ -11,6 +11,8 @@ public class supplierController
     @javafx.fxml.FXML
     private TableColumn<supplierClass, String> nameTableColumn;
     @javafx.fxml.FXML
+    private TableColumn<supplierClass, String> emailTableColumn;
+    @javafx.fxml.FXML
     private TextField emailTextField;
     @javafx.fxml.FXML
     private TextField nameTextField;
@@ -21,7 +23,7 @@ public class supplierController
     @javafx.fxml.FXML
     private TextField categoryTextField;
     @javafx.fxml.FXML
-    private TableColumn<supplierClass, String> statusTableColumn;
+    private TableColumn<supplierClass, Boolean> statusTableColumn;
     @javafx.fxml.FXML
     private TableView<supplierClass> supplierTableView;
     @javafx.fxml.FXML

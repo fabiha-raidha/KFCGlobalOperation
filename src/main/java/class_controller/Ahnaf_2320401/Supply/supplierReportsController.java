@@ -16,11 +16,11 @@ public class supplierReportsController
     @javafx.fxml.FXML
     private ComboBox<String> supplierComboBox;
     @javafx.fxml.FXML
-    private TableColumn valueTableColumn;
+    private TableColumn<supplierReportClass, Integer> valueTableColumn;
     @javafx.fxml.FXML
-    private TableColumn remarksTableColumn;
+    private TableColumn<supplierReportClass, String> remarksTableColumn;
     @javafx.fxml.FXML
-    private TableColumn metricTableColumn;
+    private TableColumn<supplierReportClass, String> metricTableColumn;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -1,10 +1,10 @@
 package class_controller.Ahnaf_2320401.Supply;
 
 public class lowStockAlertsClass {
-    private String item,outlet;
-    private Integer currentQty, minLevel;
+    private String item, outlet;
+    private int currentQty, minLevel;
 
-    public lowStockAlertsClass(String item, String outlet, Integer currentQty, Integer minLevel) {
+    public lowStockAlertsClass(String item, String outlet, int currentQty, int minLevel) {
         this.item = item;
         this.outlet = outlet;
         this.currentQty = currentQty;
@@ -27,19 +27,19 @@ public class lowStockAlertsClass {
         this.outlet = outlet;
     }
 
-    public Integer getCurrentQty() {
+    public int getCurrentQty() {
         return currentQty;
     }
 
-    public void setCurrentQty(Integer currentQty) {
+    public void setCurrentQty(int currentQty) {
         this.currentQty = currentQty;
     }
 
-    public Integer getMinLevel() {
+    public int getMinLevel() {
         return minLevel;
     }
 
-    public void setMinLevel(Integer minLevel) {
+    public void setMinLevel(int minLevel) {
         this.minLevel = minLevel;
     }
 

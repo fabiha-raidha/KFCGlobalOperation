@@ -11,15 +11,15 @@ public class receiveShipmentController
     @javafx.fxml.FXML
     private Label statusLabel;
     @javafx.fxml.FXML
-    private TableView poDetailsTableView;
+    private TableView<receiveShipmentClass> poDetailsTableView;
     @javafx.fxml.FXML
     private TextField poNumberTextField;
     @javafx.fxml.FXML
-    private TableColumn orderedQtyTableColumn;
+    private TableColumn<receiveShipmentClass, Integer> orderedQtyTableColumn;
     @javafx.fxml.FXML
-    private TableColumn itemTableColumn;
+    private TableColumn<receiveShipmentClass, String> itemTableColumn;
     @javafx.fxml.FXML
-    private TableColumn receivedQtyTableColumn;
+    private TableColumn<receiveShipmentClass, Integer> receivedQtyTableColumn;
 
     @javafx.fxml.FXML
     public void initialize() {

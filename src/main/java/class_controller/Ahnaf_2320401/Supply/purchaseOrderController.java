@@ -2,6 +2,7 @@ package class_controller.Ahnaf_2320401.Supply;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import java.time.LocalDate;
 
 public class purchaseOrderController
 {
@@ -10,7 +11,7 @@ public class purchaseOrderController
     @javafx.fxml.FXML
     private TableView<purchaseOrderClass> purchaseOrderTableView;
     @javafx.fxml.FXML
-    private TableColumn<purchaseOrderClass, String> dateTableColumn;
+    private TableColumn<purchaseOrderClass, LocalDate> dateTableColumn;
     @javafx.fxml.FXML
     private TextField deliveryLocationTextField;
     @javafx.fxml.FXML
