@@ -23,20 +23,16 @@
                 <TableColumn fx:id="complianceStatusTableColumn" prefWidth="110.0" text="Status" />
             </columns>
         </TableView>
-        <Label layoutX="40.0" layoutY="325.0" style="-fx-font-weight: bold;" text="Filters:" />
         <ComboBox fx:id="outletFilterComboBox" layoutX="40.0" layoutY="355.0" prefWidth="150.0" promptText="Filter by Outlet" />
         <ComboBox fx:id="roleFilterComboBox" layoutX="200.0" layoutY="355.0" prefWidth="150.0" promptText="Filter by Role" />
         <ComboBox fx:id="statusFilterComboBox" layoutX="360.0" layoutY="355.0" prefWidth="150.0" promptText="Filter by Status" />
         <Button layoutX="520.0" layoutY="355.0" onAction="#applyFiltersONA" prefWidth="120.0" text="Apply Filters" />
         <Button layoutX="650.0" layoutY="355.0" onAction="#clearFiltersONA" prefWidth="60.0" text="Clear" />
-        <Label layoutX="40.0" layoutY="395.0" style="-fx-font-weight: bold;" text="Assign Training:" />
         <ComboBox fx:id="staffComboBox" layoutX="40.0" layoutY="425.0" prefWidth="180.0" promptText="Select Staff" />
         <ComboBox fx:id="moduleComboBox" layoutX="230.0" layoutY="425.0" prefWidth="180.0" promptText="Select Module" />
         <DatePicker fx:id="dueDatePicker" layoutX="420.0" layoutY="425.0" prefWidth="150.0" promptText="Due Date" />
         <Button layoutX="580.0" layoutY="425.0" onAction="#assignTrainingONA" prefWidth="130.0" text="Assign Training" />
-        <Label layoutX="40.0" layoutY="465.0" style="-fx-font-weight: bold;" text="Record Completion:" />
         <Button layoutX="40.0" layoutY="495.0" onAction="#recordCompletionONA" prefWidth="150.0" text="Record Completion" />
-        <Label fx:id="statusLabel" layoutX="200.0" layoutY="500.0" prefHeight="40.0" prefWidth="510.0" text="Status: Ready" />
+        <Label fx:id="statusLabel" layoutX="239.0" layoutY="488.0" prefHeight="40.0" prefWidth="222.0" text="Status: Ready" />
     </children>
 </AnchorPane>
-
