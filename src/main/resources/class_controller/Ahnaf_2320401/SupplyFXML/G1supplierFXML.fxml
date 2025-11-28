@@ -11,23 +11,23 @@
 
     <children>
         <Label layoutX="207.0" layoutY="20.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Supplier Management" />
-
         <TableView fx:id="supplierTableView" layoutX="40.0" layoutY="60.0" prefHeight="150" prefWidth="519.0">
             <columns>
-                <TableColumn fx:id="supplierIdTableColumn" prefWidth="105.33331680297852" text="Supplier ID" />
-                <TableColumn fx:id="nameTableColumn" prefWidth="100.66668701171875" text="Name" />
-                <TableColumn fx:id="categoryTableColumn" prefWidth="103.99998474121094" text="Category" />
-                <TableColumn fx:id="contactTableColumn" prefWidth="103.99993896484375" text="Contact" />
-                <TableColumn fx:id="statusTableColumn" prefWidth="105.33328247070312" text="Status" />
+                <TableColumn fx:id="supplierIdTableColumn" prefWidth="80.0" text="Supplier ID" />
+                <TableColumn fx:id="nameTableColumn" prefWidth="90.0" text="Name" />
+                <TableColumn fx:id="categoryTableColumn" prefWidth="90.0" text="Category" />
+                <TableColumn fx:id="contactTableColumn" prefWidth="90.0" text="Contact" />
+                <TableColumn fx:id="emailTableColumn" prefWidth="90.0" text="Email" />
+                <TableColumn fx:id="statusTableColumn" prefWidth="79.0" text="Status" />
             </columns>
         </TableView>
-
         <Label fx:id="totalSuppliersLabel" layoutX="250.0" layoutY="223.0" prefHeight="17.0" prefWidth="100.0" />
         <TextField fx:id="nameTextField" layoutX="40.0" layoutY="241.0" prefHeight="25.0" prefWidth="200" promptText="Name" />
         <TextField fx:id="categoryTextField" layoutX="359.0" layoutY="241.0" prefWidth="200" promptText="Category" />
         <TextField fx:id="contactTextField" layoutX="40.0" layoutY="316.0" prefWidth="200" promptText="Contact" />
         <TextField fx:id="emailTextField" layoutX="359.0" layoutY="316.0" prefWidth="200" promptText="Email" />
         <Button layoutX="250.0" layoutY="278.0" onAction="#addSupplierONA" prefWidth="100" text="Add Supplier" />
-      <Label layoutX="286.0" layoutY="333.0" text="Label" />
+        <Label fx:id="successLabel" layoutX="40.0" layoutY="360.0" prefWidth="250.0" text="" />
+        <Label fx:id="errorLabel" layoutX="300.0" layoutY="360.0" prefWidth="250.0" text="" />
     </children>
 </AnchorPane>
