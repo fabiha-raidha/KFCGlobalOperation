@@ -9,35 +9,51 @@ import javafx.scene.control.TextField;
 public class receiveShipmentController
 {
     @javafx.fxml.FXML
-    private TableColumn<receiveShipmentClass, Integer> receivedQtyColumn;
-    @javafx.fxml.FXML
-    private TableView<receiveShipmentClass> poDetailsTable;
-    @javafx.fxml.FXML
-    private TextField poNumberField;
-    @javafx.fxml.FXML
-    private TableColumn<receiveShipmentClass, String> itemColumn;
-    @javafx.fxml.FXML
-    private TableColumn<receiveShipmentClass, Integer> orderedQtyColumn;
-    @javafx.fxml.FXML
     private Label statusLabel;
+    @javafx.fxml.FXML
+    private TableView poDetailsTableView;
+    @javafx.fxml.FXML
+    private TextField poNumberTextField;
+    @javafx.fxml.FXML
+    private TableColumn orderedQtyTableColumn;
+    @javafx.fxml.FXML
+    private TableColumn itemTableColumn;
+    @javafx.fxml.FXML
+    private TableColumn receivedQtyTableColumn;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void refreshList(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void confirmReceipt(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void openReceiveShipments(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void fetchPODetails(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void fetchPODetailsONA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void openReceiveShipmentsONA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void confirmReceiptONA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void refreshListONA(ActionEvent actionEvent) {
     }
 }

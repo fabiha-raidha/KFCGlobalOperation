@@ -18,9 +18,9 @@
         <Button layoutX="45.0" layoutY="109.0" onAction="#generateReportONA" prefWidth="170.0" text="Generate Report" />
         <TableView fx:id="reportTableView" layoutX="40.0" layoutY="160.0" prefHeight="180.0" prefWidth="570.0">
             <columns>
-                <TableColumn fx:id="metricColumn" prefWidth="198.66668701171875" text="Metric" />
-                <TableColumn fx:id="valueColumn" prefWidth="185.33331298828125" text="Value" />
-                <TableColumn fx:id="remarksColumn" prefWidth="187.3333740234375" text="Remarks" />
+                <TableColumn fx:id="metricTableColumn" prefWidth="198.66668701171875" text="Metric" />
+                <TableColumn fx:id="valueTableColumn" prefWidth="185.33331298828125" text="Value" />
+                <TableColumn fx:id="remarksTableColumn" prefWidth="187.3333740234375" text="Remarks" />
             </columns>
         </TableView>
         <Button layoutX="265.0" layoutY="363.0" onAction="#exportReportONA" prefWidth="120.0" text="Export CSV" />

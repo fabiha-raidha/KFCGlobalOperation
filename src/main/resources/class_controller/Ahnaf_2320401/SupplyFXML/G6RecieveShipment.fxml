@@ -11,18 +11,18 @@
 
     <children>
         <Label layoutX="209.0" layoutY="21.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Process Incoming Shipments" />
-        <Button layoutX="40.0" layoutY="60.0" onAction="#openReceiveShipments" prefWidth="180.0" text="Receive Shipments" />
-        <TextField fx:id="poNumberField" layoutX="250.0" layoutY="60.0" prefWidth="180.0" promptText="Enter PO Number" />
-        <Button layoutX="450.0" layoutY="60.0" onAction="#fetchPODetails" prefWidth="120.0" text="Fetch PO" />
-        <TableView fx:id="poDetailsTable" layoutX="40.0" layoutY="110.0" prefHeight="180.0" prefWidth="570.0">
+        <Button layoutX="40.0" layoutY="60.0" onAction="#openReceiveShipmentsONA" prefWidth="180.0" text="Receive Shipments" />
+        <TextField fx:id="poNumberTextField" layoutX="250.0" layoutY="60.0" prefWidth="180.0" promptText="Enter PO Number" />
+        <Button layoutX="450.0" layoutY="60.0" onAction="#fetchPODetailsONA" prefWidth="120.0" text="Fetch PO" />
+        <TableView fx:id="poDetailsTableView" layoutX="40.0" layoutY="110.0" prefHeight="180.0" prefWidth="570.0">
             <columns>
-                <TableColumn fx:id="itemColumn" prefWidth="190.0" text="Item" />
-                <TableColumn fx:id="orderedQtyColumn" prefWidth="190.0" text="Ordered Qty" />
-                <TableColumn fx:id="receivedQtyColumn" prefWidth="190.0" text="Received Qty" />
+                <TableColumn fx:id="itemTableColumn" prefWidth="190.0" text="Item" />
+                <TableColumn fx:id="orderedQtyTableColumn" prefWidth="190.0" text="Ordered Qty" />
+                <TableColumn fx:id="receivedQtyTableColumn" prefWidth="190.0" text="Received Qty" />
             </columns>
         </TableView>
-        <Button layoutX="45.0" layoutY="310.0" onAction="#confirmReceipt" prefWidth="170.0" text="Confirm Receipt" />
+        <Button layoutX="45.0" layoutY="310.0" onAction="#confirmReceiptONA" prefWidth="170.0" text="Confirm Receipt" />
         <Label fx:id="statusLabel" layoutX="255.0" layoutY="303.0" prefHeight="40.0" prefWidth="170.0" text="Status Message" />
-        <Button layoutX="450.0" layoutY="310.0" onAction="#refreshList" prefWidth="120.0" text="Refresh List" />
+        <Button layoutX="450.0" layoutY="310.0" onAction="#refreshListONA" prefWidth="120.0" text="Refresh List" />
     </children>
 </AnchorPane>

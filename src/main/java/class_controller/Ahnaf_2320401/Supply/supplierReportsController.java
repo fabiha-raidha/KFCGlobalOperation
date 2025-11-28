@@ -6,21 +6,21 @@ import javafx.scene.control.*;
 public class supplierReportsController
 {
     @javafx.fxml.FXML
-    private TableColumn<supplierReportClass, String> metricColumn;
-    @javafx.fxml.FXML
     private DatePicker endDatePicker;
-    @javafx.fxml.FXML
-    private TableColumn<supplierReportClass, String> remarksColumn;
     @javafx.fxml.FXML
     private TableView<supplierReportClass> reportTableView;
     @javafx.fxml.FXML
     private DatePicker startDatePicker;
     @javafx.fxml.FXML
-    private TableColumn<supplierReportClass, Integer> valueColumn;
-    @javafx.fxml.FXML
     private Label statusLabel;
     @javafx.fxml.FXML
     private ComboBox<String> supplierComboBox;
+    @javafx.fxml.FXML
+    private TableColumn valueTableColumn;
+    @javafx.fxml.FXML
+    private TableColumn remarksTableColumn;
+    @javafx.fxml.FXML
+    private TableColumn metricTableColumn;
 
     @javafx.fxml.FXML
     public void initialize() {
