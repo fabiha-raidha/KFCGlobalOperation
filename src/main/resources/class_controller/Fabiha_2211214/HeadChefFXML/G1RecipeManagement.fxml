@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Controller is set for Recipe/Menu Management -->
+
+<AnchorPane prefHeight="640.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="class_controller.Fabiha_2211214.HeadChef.RecipeController">
+
+    <children>
+        <!-- Screen Title -->
+        <Label layoutX="320.0" layoutY="20.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Recipe / Menu Creation and Modification" />
+
+        <!-- Filtering/Searching Section (event-8) -->
+        <Label layoutX="20.0" layoutY="65.0" style="-fx-font-weight: bold;" text="Search and Filter Recipes:" />
+
+        <HBox layoutX="20.0" layoutY="90.0" spacing="10.0">
+            <children>
+                <!-- Status Filter (ComboBox) -->
+                <ComboBox fx:id="statusFilterComboBox" prefWidth="150" promptText="Status (Active/Proposed/Rejected)" />
+                <!-- Region Filter (ComboBox) -->
+                <ComboBox fx:id="regionFilterComboBox" prefWidth="150" promptText="Region Distributed" />
+                <!-- Dish ID/Name Search (TextField) -->
+                <TextField fx:id="dishSearchTextField" prefWidth="250" promptText="Dish ID or Name" />
+
+                <!-- Filter Button (event-10) -->
+                <Button onAction="#handleFilterRecipesONA" prefWidth="100" text="Search" />
+                <!-- Reset Filter Button (event-11) -->
+                <Button onAction="#handleResetFilterONA" prefWidth="100" text="Reset" />
+            </children>
+        </HBox>
+
+        <!-- Recipe Table View (event-4) -->
+        <TableView fx:id="recipeTableView" layoutX="20.0" layoutY="140.0" prefHeight="350" prefWidth="860.0">
+            <columns>
+                <TableColumn fx:id="dishIdTableColumn" prefWidth="80.0" text="Dish ID" />
+                <TableColumn fx:id="nameTableColumn" prefWidth="200.0" text="Name" />
+                <TableColumn fx:id="priceTableColumn" prefWidth="80.0" text="Price" />
+                <TableColumn fx:id="statusTableColumn" prefWidth="120.0" text="Status" />
+                <TableColumn fx:id="regionsTableColumn" prefWidth="180.0" text="Regions Distributed" />
+                <!-- Action Column for Modify and Delete -->
+                <TableColumn fx:id="actionsTableColumn" prefWidth="200.0" text="Actions" />
+            </columns>
+        </TableView>
+
+        <!-- Status and Action Buttons -->
+        <Label fx:id="totalRecipeLabel" layoutX="20.0" layoutY="500.0" prefHeight="17.0" prefWidth="250.0" text="Total Recipes: 0" />
+
+        <!-- New Recipe Creation Form (Event-5) -->
+        <VBox fx:id="newRecipeVBox" layoutX="20.0" layoutY="530.0" prefWidth="860.0" spacing="10.0">
+            <children>
+                <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Create New Recipe" />
+
+                <HBox spacing="20.0">
+                    <children>
+                        <!-- Dish Name (event-5) -->
+                        <TextField fx:id="newDishNameTextField" prefWidth="280" promptText="Dish Name" />
+                        <!-- Price (from event-4 column) -->
+                        <TextField fx:id="newPriceTextField" prefWidth="100" promptText="Price (e.g., 9.99)" />
+                        <!-- Portion Size (event-5) -->
+                        <TextField fx:id="newPortionSizeTextField" prefWidth="100" promptText="Portion Size" />
+                  <TextField fx:id="newPriceTextField1" prefWidth="100" promptText="Price (e.g., 9.99)" />
+                       <!-- Button to save and assign status "Proposed" (event-6) -->
+                       <Button onAction="#handleSaveNewRecipeONA" prefWidth="150.0" text="Save Recipe" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+
+    </children>
+</AnchorPane>
