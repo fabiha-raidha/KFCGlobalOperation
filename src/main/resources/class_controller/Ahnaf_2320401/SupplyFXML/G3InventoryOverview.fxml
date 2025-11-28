@@ -28,10 +28,10 @@
         <ComboBox fx:id="outletFilterComboBox" layoutX="240.0" layoutY="275.0" prefWidth="180.0" promptText="Filter by Outlet/Region" />
         <ComboBox fx:id="stockWarningFilterComboBox" layoutX="440.0" layoutY="275.0" prefWidth="170.0" promptText="Filter by Stock Warning" />
 
-        <Button layoutX="270.0" layoutY="315.0" onAction="#applyfiltersONA" prefWidth="120.0" text="Apply Filters" />
+        <Button layoutX="465.0" layoutY="327.0" onAction="#applyfiltersONA" prefWidth="120.0" text="Apply Filters" />
 
-        <Button layoutX="240.0" layoutY="360.0" onAction="#raisePurchaseRequestONA" prefWidth="170.0" text="Raise Purchase Request" />
+        <Button layoutX="45.0" layoutY="327.0" onAction="#raisePurchaseRequestONA" prefWidth="170.0" text="Raise Purchase Request" />
 
-        <Label fx:id="statusLabel" layoutX="270.0" layoutY="410.0" text="Status Message" />
+        <Label fx:id="statusLabel" layoutX="289.0" layoutY="331.0" text="Status Message" />
     </children>
 </AnchorPane>
