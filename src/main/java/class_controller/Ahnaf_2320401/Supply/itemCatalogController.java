@@ -14,8 +14,6 @@ public class itemCatalogController
     @javafx.fxml.FXML
     private TableColumn<itemCatalogClass, Integer> itemIdTableColumn;
     @javafx.fxml.FXML
-    private TextField itemNameField;
-    @javafx.fxml.FXML
     private TableColumn<itemCatalogClass, String> categoryTableColumn;
     @javafx.fxml.FXML
     private Label statusLabel;
@@ -25,6 +23,8 @@ public class itemCatalogController
     private TableColumn<itemCatalogClass, String> supplierTableColumn;
     @javafx.fxml.FXML
     private ComboBox<String> supplierComboBox;
+    @javafx.fxml.FXML
+    private TextField itemNametextField;
 
     @javafx.fxml.FXML
     public void initialize() {

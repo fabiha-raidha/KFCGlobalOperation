@@ -23,7 +23,7 @@
             </columns>
         </TableView>
         <Button layoutX="40.0" layoutY="310.0" onAction="#addNewItemONA" prefWidth="120.0" text="Add New Item" />
-        <TextField fx:id="itemNameField" layoutX="180.0" layoutY="310.0" prefWidth="130.0" promptText="Item Name" />
+        <TextField fx:id="itemNametextField" layoutX="180.0" layoutY="310.0" prefWidth="130.0" promptText="Item Name" />
         <ComboBox fx:id="categoryComboBox" layoutX="320.0" layoutY="310.0" prefWidth="120.0" promptText="Category" />
         <ComboBox fx:id="supplierComboBox" layoutX="450.0" layoutY="310.0" prefWidth="160.0" promptText="Preferred Supplier" />
         <Button layoutX="205.0" layoutY="360.0" onAction="#saveItemONA" prefWidth="120.0" text="Save Item" />
